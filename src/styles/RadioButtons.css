@@ -34,8 +34,11 @@
     left: 0px;
     height: 25px;
     width: 25px;
-    background-color: #D1DCF7;
+    background-color: #f5f6f9;
     border-radius: 50%;
+    border-color: #4f93db;
+    border-style: solid;
+    
   }
   
   /* On mouse-over, add a grey background color */
@@ -45,7 +48,7 @@
   
   /* When the radio button is checked, add a blue background */
   .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #f7f9fa;
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -60,20 +63,38 @@
     display: block;
   }
   
+  
   /* Style the indicator (dot/circle) */
   .container .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
+       top: 3px;
+      left: 3px;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
-      background: white;
+      background: rgb(23, 5, 222);
   }
-  .illustration-image{
+  .illustration-image1{
     position: absolute;
     left: 250px;
     top: 33%;
     z-index: 3;
+  }
+  .curved-button-navbar {
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    box-shadow: inset 0 1px 5px #96b1ce;
+    margin-right: 35px;
+    margin-left: 8px;
+    width: 140px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #85b5e9;
+    /* margin: auto; */
   }
   .Apigee-Options-Page{
     background-color: #D1DCF7;
@@ -101,7 +122,7 @@
     height: 60px;
     box-shadow: 0 1px 25px #4f93db;
   }
-  .illustration-image{
+  .illustration-image1{
     display: none;
   }
   .image-logo{
@@ -123,21 +144,21 @@
     height: auto;
     width: 20px;
   }
-  .curved-button-nav {
+  .curved-button-navbar {
     padding: 10px 10px;
-    border-radius: 10px;
+    border-radius: 25px;
     color: black;
     border: none;
     cursor: pointer;
     outline: none;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     box-shadow: inset 0 1px 5px #96b1ce;
-    margin-right: 20px;
-    margin-left: 40px;
-    width: 50px;
-    font-size: 15px;
+    margin-right: 35px;
+    margin-left: 8px;
+    width: 140px;
+    font-size: 18px;
     font-weight: bold;
-    margin: auto;
+    /* margin: auto; */
   }
 
 }
@@ -156,7 +177,7 @@
     width: 440px;
     top: 15px;
 }
-.illustration-image{
+.illustration-image1{
   display: none;
 }
 .image-logo{
@@ -166,21 +187,22 @@
 .navbar-custom{
   display: none;
 }
-.curved-button-nav {
+.curved-button-navbar {
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 25px;
   color: black;
   border: none;
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
   box-shadow: inset 0 1px 5px #96b1ce;
-  margin-right: 20px;
-  margin-left: 40px;
-  width: 50px;
-  font-size: 15px;
+  margin-right: 35px;
+    margin-left: 8px;
+    width: 140px;
+  font-size: 18px;
   font-weight: bold;
-  margin: auto;
+  /* margin: auto; */
+  margin-top: 18px;
 }
   
 }
@@ -199,11 +221,11 @@
     width: 500px;
     top: 15px;
 }
-.illustration-image{
+.illustration-image1{
   position: absolute;
-  left: 230px;
+  left: 228px;
   height: 350px;
-  top: 35%;
+  top: 32%;
   z-index: 3;
 }
 .image-logo{
@@ -213,21 +235,22 @@
 .navbar-custom{
   display: none;
 }
-.curved-button-nav {
+.curved-button-navbar {
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 25px;
   color: black;
   border: none;
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
   box-shadow: inset 0 1px 5px #96b1ce;
-  margin-right: 20px;
-  margin-left: 40px;
-  width: 50px;
-  font-size: 15px;
+  margin-right: 35px;
+  margin-left: 8px;
+  width: 140px;
+  font-size: 18px;
   font-weight: bold;
-  margin: auto;
+  background-color: #85b5e9;
+  /* margin: auto; */
 }
 }
 
@@ -244,7 +267,7 @@
     width: 700px;
     top: 15px;
 }
-.illustration-image{
+.illustration-image1{
   position: absolute;
   left: 630px;
   height: 450px;
@@ -255,21 +278,21 @@
     margin-top: 10px;
     width: 200px
 }
-.curved-button-nav {
+.curved-button-navbar {
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 25px;
   color: black;
   border: none;
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
   box-shadow: inset 0 1px 5px #96b1ce;
-  margin-right: 20px;
-  margin-left: 40px;
-  width: 50px;
-  font-size: 15px;
+  margin-right: 35px;
+  margin-left: 8px;
+  width: 140px;
+  font-size: 18px;
   font-weight: bold;
-  margin: auto
+  /* margin: auto */
 }
 
 }

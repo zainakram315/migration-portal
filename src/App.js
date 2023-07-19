@@ -13,13 +13,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/imex-page" element={<Imex />} />
-        <Route exact path="/ApigeeOptions" element={<ApigeeOptions/>}/>
-        <Route exact path="/CustomCheckBox" element={<CustomCheckbox/>}></Route>
-        <Route path="/options-page" element={<Options />} />
+        {/* <Route path="/" element={<Login />} /> */}
+        {/* <Route path="/imex-page" element={<Imex />} /> */}
+        <Route exact path="/" element={<ApigeeOptions/>}/>
+        {/* <Route exact path="/CustomCheckBox" element={<CustomCheckbox/>}></Route> */}
+        {/* <Route path="/options-page" element={<Options />} /> */}
         {/* <Route path="/saasoptions-page" element={<SaasOptions />} /> */}
-        <Route path="/saas" element={<Saas />} />
+        {/* <Route path="/saas" element={<Saas />} /> */}
       </Routes>
     </Router>
   );

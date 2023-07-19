@@ -8,13 +8,13 @@ import logoImage from "../images/logo.png";
 import vectorImage from "../images/vectorImage.png";
 import { useNavigate } from 'react-router-dom';
 import "../styles/RadioButtons.css";
-import illustrationImage from "../images/illustrationImage.svg";
+import illustrationImage1 from "../images/illustrationImage.svg";
 
 export default function ApigeeOptions() {
     const [selectedOption, setSelectedOption] = useState("Apigee-SaaS");
     const navigate = useNavigate();
     const gotoPrevious = () => {
-        navigate('/login');
+        navigate('/imex-page');
     };
 
     const handleOptionChange = (event) => {
@@ -24,7 +24,7 @@ export default function ApigeeOptions() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         if (selectedOption === "Apigee-SaaS") {
-            navigate('/login');
+            navigate('/saas');
         } else if (selectedOption === "Apigee-OPDK") {
             navigate('/login');
         }
@@ -64,8 +64,8 @@ export default function ApigeeOptions() {
                     </div>
                 </div>
             </div>
-            <div className="illustration-image">
-                <img src={illustrationImage} alt="G1" />
+            <div className="illustration-image1">
+                <img src={illustrationImage1} alt="G1" />
             </div>
             <div className="centered-card">
                 <div className="card">
@@ -115,7 +115,7 @@ export default function ApigeeOptions() {
                                 Apigee X
                             </label>
                             <br />
-                            <button className="curved-button" type="submit">
+                            <button className="curved-button-navbar" type="submit">
                                 Next
                             </button>
                             <img src={vectorImage} alt="Vector" className="vector" />

@@ -10,7 +10,7 @@ const Imex = () => {
   const navigate = useNavigate();
 
   const handleImportButtonClick = () => {
-    navigate('/options-page'); // Navigates to '/import-page' when the Import button is clicked
+    navigate('/ApigeeOptions'); // Navigates to '/import-page' when the Import button is clicked
   };
 
   const handleExportButtonClick = () => {
