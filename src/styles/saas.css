@@ -1,0 +1,163 @@
+/* CSS for Saas page */
+.saas-page {
+    position: relative;
+    height: 100vh;
+  }
+   
+  /* Rest of the CSS remains unchanged */
+  .saas-content-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 3;
+  }
+  
+  .saas-illustration {
+    position: absolute;
+    bottom: 110px;
+    left: 175px;
+    width: 35%;
+    height: auto;
+    z-index: 6;
+    right: -10px;
+  }
+  
+  .saas-illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .saas-card {
+    background-color: white;
+    border-radius: 23px;
+    padding: 20px;
+    box-shadow: 0 1px 25px #4f93db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 475px;
+    width: 475px;
+    z-index: 5;
+    position: relative;
+    overflow: hidden; /* Hide any content that overflows from the card */
+  }
+  
+  .saas-logo-container {
+    position: absolute;
+    top: 40px;
+    left: 49%;
+    transform: translateX(-50%);
+    margin-right: 1px;
+    right: 12%;
+  }
+  
+  .saas-logo {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .saas-heading {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 150px;
+    margin-right: 11px;
+  }
+  
+  .saas-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .saas-curved-button {
+    padding: 15px 40px;
+    border-radius: 30px;
+    background-color: #99d8ff;
+    color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: inset 0 1px 7px #2864C8;
+    margin-top: 20px;
+    width: 148px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 12px;
+  }
+  
+  .saas-curved-button:hover {
+    box-shadow: inset 0 1px 2px #2864C8, 0 0 0 1px #2864C8;
+    background-color: white;
+    color: #2864C8;
+  }
+  
+  .saas-curved-button:focus {
+    border-color: #2864C8;
+    color: white;
+  }
+  
+  .vector {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .behind-image {
+    position: absolute;
+    top: 30%; /* Adjust the top and left values to position the image */
+    left: 50%;
+    width: 200px; /* Set the width and height to match the size of the image */
+    height: 200px;
+    background-image: url('../images/behind.png'); /* Set the background image */
+    background-size: cover;
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: 2; /* Place the image behind the buttons */
+  }
+  
+  @media (max-width: 1150px) {
+    .saas-illustration {
+      visibility: hidden; /* Hide the image for smaller screen sizes */
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .saas-logo-container {
+      left: 50% !important;
+      transform: translateX(-50%);
+      top: 30px;
+      width: 200px;
+    }
+  
+    .saas-card {
+      height: 400px !important;
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .saas-logo-container {
+      top: 10px;
+      width: 150px;
+    }
+  
+    .saas-card {
+      height: 350px !important;
+      width: 300px;
+    }
+  
+    .saas-heading {
+      font-size: x-large;
+    }
+  
+    .saas-curved-button {
+      width: 120px;
+    }
+  }
+  

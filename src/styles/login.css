@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'Lato';
+  font-weight: 800;
+  src: url('../fonts/Lato-ExtraBold.ttf') format('truetype');
+}
+
+.login-page {
+  background: url('../images/backimage.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #D1DCF7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo-container {
+  position: absolute;
+  top: 30px;
+  left: 25%;
+}
+
+.g1-image {
+  position: relative;
+}
+
+.card {
+  background-color: white;
+  border-radius: 23px;
+  padding: 20px;
+  box-shadow: 0 1px 25px #4f93db;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 475px;
+  width: 475px;
+  margin-left: 55px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.heading {
+  line-height: 0.8;
+  margin-bottom: 10px;
+}
+
+.vector {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: xx-large;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0;
+  line-height: 1.12;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-container .input-label {
+  font-size: 12px;
+  margin-right: 10px;
+  font-family: 'Lato';
+  color: #333333eb;
+  line-height: 0.2;
+}
+
+.input-container .input {
+  padding-right: 30px;
+  line-height: 2;
+  border-radius: 5px;
+  border: 1px solid #99d8ff;
+  outline-color: #2864C8;
+}
+
+/* Existing CSS styles... */
+
+/* Custom styles for smaller placeholder text */
+/* Existing CSS styles... */
+
+/* Custom styles for placeholders */
+.input::placeholder {
+  color: #999999; /* Light grey color */
+  font-size: 12px; /* Adjust the font size as desired */
+  line-height: 1.5;
+}
+
+.input-container .icon {
+  position: relative;
+  top: 70%;
+  right: 35px;
+  transform: translateY(-20%);
+}
+
+.input {
+  width: 275px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* Add margin-top to center the button */
+}
+
+.curved-button {
+  padding: 15px 40px;
+  border-radius: 30px;
+  background-color: #99d8ff;
+  color: black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+  box-shadow: inset 0 1px 7px #2864C8;
+  margin-top: 20px;
+  margin-right: 90px;
+  margin-left: 90px;
+  width: 140px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Add hover effect to show only blue outline on button */
+.curved-button:hover {
+  box-shadow: inset 0 1px 2px #2864C8, 0 0 0 1px #2864C8; /* Show only blue outline */
+  background-color: white; 
+  color: #2864C8;
+}
+
+/* Focus styles for the button */
+.curved-button:focus {
+  border-color: #2864C8;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .logo-container {
+    position: absolute;
+    top: 32px !important;
+    left: 32px !important;
+    width: 200px;
+  }
+
+  .g1-image {
+    display: none;
+  }
+
+  .card {
+    height: 100vh; 
+    width: 150px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .logo-container {
+    position: absolute;
+    top: 50%; /* Center the logo vertically */
+    left: 50%; /* Center the logo horizontally */
+    transform: translate(-50%, -50%); /* Center the logo precisely */
+    width: 200px; /* Adjust the width as needed */
+  }
+
+  .g1-image {
+    display: none;
+  }
+
+  .card {
+    height: 100vh;
+    width: 150px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 1023px) {
+  .logo-container {
+    position: absolute;
+    top: 12px !important;
+    left: 270px !important;
+  }
+
+  .g1-image {
+    display: none;
+  }
+
+  .card {
+    height: 100vh !important;
+    width: 400px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo-container {
+    position: absolute;
+    top: 12px !important;
+    left: 393px !important;
+  }
+
+  .g1-image {
+    display: none;
+  }
+
+  .card {
+    height: auto !important;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1500) {
+  .logo-container {
+    position: absolute;
+    top: 20px !important;
+    left: 1130px !important;
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .g1-image {
+    display: none;
+  }
+
+  .card {
+    height: 100vh !important;
+    width: 500px;
+  }
+  .card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:auto
+  }
+}
