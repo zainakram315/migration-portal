@@ -9,6 +9,8 @@ import vectorImage from "../images/vectorImage.png";
 import { useNavigate } from 'react-router-dom';
 import "../styles/RadioButtons.css";
 import illustrationImage1 from "../images/illustrationImage.svg";
+import behindCardImage from "../images/behind.png";
+
 
 export default function ApigeeOptions() {
     const [selectedOption, setSelectedOption] = useState("Apigee-SaaS");
