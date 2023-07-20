@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import notificationImage from "../images/notification.png";
 import userIcon from "../images/user.png";
 import backwardImage from "../images/backward.png";
@@ -21,7 +21,7 @@ export default function CustomCheckbox() {
         <div className="Apigee-Checkbox-Page">
             <div className="container-fluid">
                 <div className="row d-flex align-items-center justify-content-between navbar-custom py-3">
-                    <div className="col-md-6 col-5 left-options" align="left">
+                    <div className="col-md-6 col-5 left-options-checkbox" align="left">
                         <img
                             src={backwardImage}
                             alt="Return to previous page"
@@ -30,7 +30,7 @@ export default function CustomCheckbox() {
                             width="20px"
                         />
                     </div>
-                    <div className="col-md-5 col-6 right-options" align="right">
+                    <div className="col-md-5 col-6" align="right">
                         <button className="curved-button-nav">
                             <img
                                 src={notificationImage}
@@ -45,13 +45,13 @@ export default function CustomCheckbox() {
                     </div>
                 </div>
             </div>
-            <div className="illustration-image">
+            <div className="checkbox-illustration-image">
                 <img src={illustrationImage} alt="G1" />
             </div>
-            <div className="centered-card">
-                <div className="card">
+            <div className="centered-card-check">
+                <div className="checkbox-card">
                     <div className="image-logo">
-                        <img src={logoImage} alt="Logo" className="logo" />
+                        <img src={logoImage} alt="Logo" className="checkbox-logo" />
                     </div>
 
                     <div className="custom-checkkbox">

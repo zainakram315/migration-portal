@@ -9,6 +9,23 @@
     height: auto;
     width: 20px;
   }
+  .curved-button-nav{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0px 10px ;
+  }
+  .navbar-custom{
+    background-color: #7DC4EC;
+    height: 60px;
+    box-shadow: 0 1px 25px #4f93db;
+  }
+  .checkbox-logo{
+    width:190px;
+    height: 100%;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 
   /* CSS for the checkboxes*/
 
@@ -48,7 +65,7 @@
     height: 25px;
     width: 25px;
     background-color: #cdecec;
-    margin-top: 5px;
+    margin-top: 2px;
 
   }
   
@@ -96,18 +113,18 @@
     outline: none;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     box-shadow: inset 0 1px 7px #2864C8;
-    /* margin-top: 50px;
+    margin-top: 50px;
     margin-right: 20px;
-    margin-left: 180px; */
+    margin-left: 180px;
     width: 140px;
     font-size: 15px;
     font-weight: bold;
-    margin: auto
   }
-  .illustration-image{
+  
+  .checkbox-illustration-image{
     position: absolute;
-    left: 201px;
-    top: 34%;
+    margin-left: 265px;
+    margin-top: 13%;
     z-index: 3;
   }
   .vector {
@@ -115,7 +132,7 @@
     bottom: 0;
     right: 0;
     }
-    .card {
+    .checkbox-card {
         background-color: #fffafa;
         padding: 20px;
         border-radius: 5px;
@@ -125,38 +142,71 @@
         border-radius: 23px;
         height: 560px;
         width: 530px;
-        top: 15px;
+        margin-top: 55px;
+        margin-left: 600px;
+        position: relative;
+        overflow: hidden;
+    }
+    .centered-checkbox-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; Set the height of the container to fill the entire viewport */
+    
     }
 
-    @media only screen and (max-width: 600px) {
-      .card {
-        background-color: #fffafa;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 1px 25px #4f93db;
-        text-align: center;
-        align-items: center;
-        border-radius: 23px;
-        height: 700px;
-        width: 530px;
-        top: 5px;
-    }
-    .curved-button {
-      padding: 10px 40px;
-      border-radius: 30px;
-      background-color: #99d8ff;
-      color: black;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-      box-shadow: inset 0 1px 7px #2864C8;
-      margin: auto
-    }
+    /*media queries */
+
+    @media (max-width: 1150px) {
+      .checkbox-illustration-image{
+          visibility: hidden;
+      }
   }
 
-  @media only screen and (min-width: 768px) {
-    .card {
+  @media  (max-width: 1440px) {
+    .checkbox-logo{
+      width:190px;
+      height: 100%;
+      margin-right: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .checkbox-illustration-image{
+      position: absolute;
+      /* left: 120px;
+      top: 63%;
+      z-index: 3; */
+      left: 120px;
+      top: 63%;
+      z-index: 3;
+  }
+  
+  .checkbox-card {
+    background-color: #fffafa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 25px #4f93db;
+    text-align: center;
+    align-items: center;
+    border-radius: 23px;
+    height: 560px;
+    width: 530px;
+    margin-top: 56px;
+    margin-left: 450px;
+    position: relative;
+    overflow: hidden;
+  }
+  }
+
+  @media (min-width:426) and (max-width: 768px) {
+    .checkbox-logo{
+      width:100px;
+      height: 100%;
+      margin-right: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .checkbox-card {
       background-color: #fffafa;
       padding: 20px;
       border-radius: 5px;
@@ -164,50 +214,14 @@
       text-align: center;
       align-items: center;
       border-radius: 23px;
-      height: 560px;
-      width: 530px;
-      top: 5px;
-  }
-  }
-  @media only screen and (min-width: 1400px) {
-    .card {
-      background-color: #fffafa;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 1px 25px #4f93db;
-      text-align: center;
-      align-items: center;
-      border-radius: 23px;
-      height: 560px;
-      width: 530px;
-      top: 5px;
-  }
-  .illustration-image{
-    position: absolute;
-    left: 200px;
-    top: 32%;
-    z-index: 3;
-  }
-  }
-
-  @media only screen and (min-width: 2400px) {
-    .card {
-      background-color: #fffafa;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 1px 25px #4f93db;
-      text-align: center;
-      align-items: center;
-      border-radius: 23px;
-      height: 960px;
-      width: 700px;
-      top: 5px;
-  }
-  .illustration-image{
-    position: absolute;
-    left: 600px;
-    top: 54%;
-    z-index: 3;
+      height: 530px;
+      width: 100px;
+      /* margin-top: 40px;
+      margin-left: 100px; */
+      margin-top: 56px;
+      margin-left: 130px;
+      position: relative;
+      overflow: hidden;
   }
   .curved-button {
     padding: 10px 40px;
@@ -219,9 +233,90 @@
     outline: none;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     box-shadow: inset 0 1px 7px #2864C8;
-    /* margin-top: 50px;
-    margin-left: 250px; */
-    margin: auto
-  
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 180px;
+    width: 140px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+    
+  }
+
+  @media (max-width: 1024px) {
+    .checkbox-logo{
+      width:190px;
+      height: 100%;
+      margin-right: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .centered-checkbox-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; Set the height of the container to fill the entire viewport */
+    
+    }
+  .checkbox-card {
+    background-color: #fffafa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 25px #4f93db;
+    text-align: center;
+    align-items: center;
+    border-radius: 23px;
+    height: 560px;
+    width: 530px;
+    /* margin-top: 55px;
+    margin-left: 390px; */
+    margin-top: 56px;
+    margin-left: 170px;
+    margin-right: 110px;
+    overflow: hidden;
+}
+.curved-button {
+  padding: 10px 40px;
+  border-radius: 30px;
+  background-color: #99d8ff;
+  color: black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  box-shadow: inset 0 1px 7px #2864C8;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 180px;
+  width: 140px;
+  font-size: 15px;
+  font-weight: bold;
+}
+    
+  }
+
+  @media (max-width: 425px) {
+    .checkbox-card {
+      background-color: #fffafa;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 25px #4f93db;
+      text-align: center;
+      align-items: center;
+      border-radius: 23px;
+      height: 950px;
+      width: 530px;
+      /* margin-top: 55px;
+      margin-left: 550px; */
+      margin-top: 20px;
+      margin-left: 110px;
+      margin-right: 10px;
+      overflow: hidden;
+  }
+  .curved-button{
+    margin-right: 40px;
   }
   }
+
+
+

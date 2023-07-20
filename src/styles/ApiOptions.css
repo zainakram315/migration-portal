@@ -1,0 +1,362 @@
+.ApiOptions-page{
+    background-color: #D1DCF7;
+    background-size: cover;
+    height: 100vh;
+}
+.custom-header{
+    background-color: #7DC4EC;
+    height: 60px;
+    box-shadow: 0 1px 25px #4f93db;
+}
+.left-image{
+    height: auto;
+    width: 20px;
+}
+.curved-button-header{
+        padding: 7px;
+        border-radius: 10px;
+        margin: 0px 10px ;
+}
+.illustration-image-options{
+    position: absolute;
+    left: 235px;
+    top: 37%;
+    z-index: 3;
+}
+.apioptions-card{
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+  
+}
+.api-card{
+  background-color: #fffafa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 25px #4f93db;
+  text-align: center;
+  align-items: center;
+  border-radius: 23px;
+  height: 560px;
+  width: 530px;
+  top: 15px;
+  margin-top: 56px;
+  margin-left: 570px;
+  position: relative;
+  overflow: hidden;
+  
+
+}
+.image-logo-api{
+    width: 130px;
+  margin-bottom: 10px;
+  margin-left: 150px;
+  margin-top: 10px;
+}
+.logo-api{
+  width: 20px;
+}
+.container-api-option{
+    display: block;
+    position: relative;
+    padding-left: 182px;
+    margin-bottom: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+
+}
+.ImageVector{
+position: absolute;
+bottom: 0;
+right: 0;
+}
+input[type="radio"] {
+    /* Hide the default radio button appearance */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Custom radio button style */
+  input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    background-color: #fff;
+  }
+  
+  /* Radio button label text */
+  input[type="radio"] + label span {
+    position: relative;
+    top: -2px;
+  }
+  
+  /* Checked radio button style */
+  input[type="radio"]:checked + label:before {
+    background-color: #2196F3; /* Change this color to match your desired selection color */
+    border-color: #2196F3; /* Change this color to match your desired selection color */
+  }
+  
+  /* Responsive styles using media queries */
+  /* Adjust radio button size for smaller screens */
+  @media (max-width: 768px) {
+    input[type="radio"] + label:before {
+      width: 18px;
+      height: 18px;
+    }
+  
+    input[type="radio"] + label span {
+      font-size: 14px;
+    }
+  }
+
+  .container-api-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark-api {
+    position:absolute;
+    top: 0;
+    margin-top: 8px;
+    left: 140px;
+    height: 25px;
+    width: 25px;
+    background-color: #f5f6f9;
+    border-radius: 50%;
+    border-color: #4f93db;
+    border-style: solid;
+    
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-api-option:hover input ~ .checkmark-api {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container-api-option input:checked ~ .checkmark-api {
+    background-color: #f7f9fa;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark-api:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container-api-option input:checked ~ .checkmark-api:after {
+    display: block;
+  }
+  
+  
+  /* Style the indicator (dot/circle) */
+  .container-api-option .checkmark-api:after {
+       top: 3px;
+      left: 3px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: rgb(23, 5, 222);
+  }
+
+  .curved-button-apioption{
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    box-shadow: inset 0 1px 5px #96b1ce;
+    margin-right: 35px;
+    margin-left: 13px;
+    width: 140px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #85b5e9;
+    /* margin: auto; */
+  }
+  .logo-api{
+    width: 190px;
+  height: 100%;
+  margin-right: 10px;
+  margin-bottom:7px;
+  }
+/*media queries */
+
+  @media (max-width: 1150px) {
+      .illustration-image-options{
+          visibility: hidden;
+      }
+  }
+
+  @media  (max-width: 1440px) {
+    .image-logo-api{
+      width: 130px;
+      margin-bottom: 10px;
+      margin-left: 150px;
+      margin-top: 10px;
+    }
+    .illustration-image-options{
+      position: absolute;
+      left: 120px;
+      top: 63%;
+      z-index: 3;
+  }
+  
+    .api-card{
+      background-color: #fffafa;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 25px #4f93db;
+      text-align: center;
+      align-items: center;
+      border-radius: 23px;
+      height: 560px;
+      width: 530px;
+      top: 15px;
+      margin-top: 56px;
+      margin-left: 450px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .image-logo-api{
+      width: 130px;
+      margin-bottom: 10px;
+      margin-left: 150px;
+      margin-top: 10px;
+    }
+    .api-card{
+      background-color: #fffafa;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 25px #4f93db;
+      text-align: center;
+      align-items: center;
+      border-radius: 23px;
+      height: 560px;
+      width: 530px;
+      top: 15px;
+      margin-top: 56px;
+      margin-left: 130px;
+      overflow: hidden;
+    }
+    .curved-button-apioption{
+      padding: 10px 10px;
+      border-radius: 25px;
+      color: black;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+      box-shadow: inset 0 1px 5px #96b1ce;
+      margin-right: 35px;
+      margin-left: 13px;
+      width: 140px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #85b5e9;
+      /* margin: auto; */
+    }
+    
+  }
+
+
+  @media (max-width: 1024px) {
+    .image-logo-api{
+      width: 130px;
+      margin-bottom: 10px;
+      margin-left: 150px;
+      margin-top: 10px;
+    }
+    .apioptions-card{
+      display: flex;
+      justify-content:center;
+      align-items: center; 
+    
+  }
+    .api-card{
+      background-color: #fffafa;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 25px #4f93db;
+      text-align: center;
+      align-items: center;
+      border-radius: 23px;
+      height: 560px;
+      width: 530px;
+      top: 15px;
+      margin-top: 56px;
+      margin-left: 170px;
+      margin-right: 110px;
+      overflow: hidden;
+    }
+    .curved-button-apioption{
+      padding: 10px 10px;
+      border-radius: 25px;
+      color: black;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+      box-shadow: inset 0 1px 5px #96b1ce;
+      margin-right: 35px;
+      margin-left: 13px;
+      width: 140px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #85b5e9;
+      /* margin: auto; */
+    }
+    
+  }
+
+  @media (max-width: 425px) {
+    .api-card{
+      background-color: #fffafa;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 25px #4f93db;
+      text-align: center;
+      align-items: center;
+      border-radius: 23px;
+      height: 560px;
+      width: 530px;
+      top: 2px;
+      margin-top: 56px;
+      margin-left: 5px;
+      margin-right: 10px;
+      overflow: hidden;
+    }
+  }
